@@ -1,0 +1,56 @@
+.skeleton-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.skeleton-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: inline-block;
+}
+
+.skeleton-part {
+  stroke: #4a4a4a;
+  stroke-width: 2;
+  fill: none;
+}
+
+.skeleton-detail {
+  stroke: #666;
+  stroke-width: 1;
+  fill: #fff;
+}
+
+.skeleton-cross {
+  stroke: #ff3860;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.skeleton-mouth {
+  stroke: #ff3860;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.skeleton-death {
+  animation: deathShake 0.5s ease-in-out;
+}
+
+@keyframes deathShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.attempts-counter {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #ff3860;
+  font-weight: bold;
+}
